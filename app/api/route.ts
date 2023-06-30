@@ -4,8 +4,8 @@ type StripeResponse = {
   sessions: string;
 };
 
-export function GET() {
-  return NextResponse.json({
+export async function GET(): Promise<NextResponse<StripeResponse>> {
+  return await NextResponse.json({
     sessions: '/api/sessions',
   });
 }

@@ -71,7 +71,7 @@ export default function Products(props: Props) {
             }
           >
             buy for €
-            {(props?.magazine.default_price as Stripe.Price).unit_amount! / 100}{' '}
+            {(props.magazine.default_price as Stripe.Price).unit_amount! / 100}{' '}
             month
           </button>
         </div>
